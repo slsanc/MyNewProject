@@ -6,7 +6,7 @@ const TodoItem = (props) => {
 
     return (
         <li>
-            {todoItemDict.completed ? <s>{todoItemDict.title}</s> : <div>{todoItemDict.title}</div>}
+            {todoItemDict.completed ? <div><s>{todoItemDict.title}</s></div> : <div>{todoItemDict.title}</div>}
             
             <button onClick={() => switchItemCompletionStatus(todoItemDict)}>
                 Complete/Uncomplete Item
